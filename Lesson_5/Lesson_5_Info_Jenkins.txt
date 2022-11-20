@@ -1,0 +1,10 @@
+
+Jenkins:
+=================
+1) Start Jenkins server:
+	cmd C:\Users\shayrm\Jenkins> java -jar .\jenkins.war  --enable-future-java
+
+2) Connect to the Kenkins server:
+	http://localhost:8080/
+	admin / d9e930be85a843d0853dcb34ba4419dd
+	shayrm / zdp3gxh*fxm4VKF@vjb

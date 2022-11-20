@@ -1,0 +1,117 @@
+
+
+
+DevOps - L1 - Introduction
+------------------------------
+
+* devops is a calture.
+* phylisophic and concept of the methods used by the organization
+	- Empower Eng
+	- Automation
+	- Visibility 
+	- Self Service
+
+* Benefit of the calture:
+	- Speed
+	- Reliability
+	- Productivity 
+	
+Project methods:
+---------------------
+* Waterfall
+	- Tasks with dependency
+	- flow of operation
+	
+* Agile
+	- create MVP (Minimum valuable Product)
+	- Quik release to production
+
+* CI/CD
+	- CI Constant Integration
+		Jenkins, Git, Travis CI, Bamboo.
+	- Save the code in centrelised location or repository.
+	- Release (make the nececery prerequsite to make sure a quick deployment)
+	
+	- CD Constant Delivery.
+	- Move the code with the deployment.
+	- Safe & Quick
+	- Deployment - should be quick as possible.
+
+	1) Build 	  - get the code into packge (e.g zip, artifact => SW version)
+	2) Release 	  - We get the environment to run the artifact (like prerequsite installation) - make integration tests
+	3) Deployment - add or extract the new code to the server.
+	
+	BCD - Build -> Create -> Deploy
+	
+
+DevOps - L2 - Python - Continue
+=======================================
+
+Variables types:
+---------------------------------------
+Integer 	-> 5 , 4, 3 etc
+float 		-> 3.14, 5.67 etc
+string		-> "Help", "string" etc
+Boolean 	-> True, False
+
+List 		-> x = [1, 2, 3, 4, 5, 6]
+			-> Slicing  = Range [0:3] will return the index of x and [1,2,3] (3-0 will return the first 3 elements)
+			-> x[-1] is the same as x[len(x)-1] ==> 6
+			-> o(n) the complexity is high since we have n number of element that we will need to go over to find specific element in the list.
+
+backup_ips = ips	=> the list will have the same pointer in memory so if we will change ips backup_ips will be change as well.
+						to create a copy of list the right methos is backup_ips = ips.copy() (use the copy() function)
+
+tuple		-> it is a read only list
+				x = (1, 2, 3)
+				
+dict 		-> dic = {"age": 45, "name": "Shay"} ==> key value pair 
+			-> o(1) dictionaries variable with complexity of o(1) 
+			-> dic["city"] = "Kafr_Sabe" ==> will add key value to the dic
+			-> dic["age"] will retun the value of this key
+			->
+				dic.values()
+				Out[35]: dict_values([45, 'Shay', 'Oranit'])
+
+				dic.keys()
+				Out[36]: dict_keys(['age', 'name', 'city'])
+
+			-> 
+				
+				students = {'027108992': {"name": "Shay", "age": 48, "city": "Oranit"}}
+				
+				# adding item to the dict
+				students["02718993'] = {"name": "Ori", "age": 40, "city": "Tel Aviv"}
+				
+				students
+				Out[41]: 
+				{'027108992': {'name': 'Shay', 'age': 48, 'city': 'Oranit'},
+				 '02718993': {'name': 'Ori', 'age': 40, 'city': 'Tel Aviv'}}
+
+
+Loops
+----------
+
+* while
+	# continue as long as the condition is true
+	x = 0
+	while x < 3:
+		print("x is smaller than 10")
+		x += 1
+
+* for
+	machines = ["m1", "m2", "m3"]
+	for m in machines:
+		print(f"the value of machine is {m}")
+		
+	In [42]: machines = ["m1", "m2", "m3"]
+
+	In [43]: for m in machines:
+    ...:     	print(f"this is the valuse of machine {m}")
+    ...: 
+		this is the valuse of machine m1
+		this is the valuse of machine m2
+		this is the valuse of machine m3
+
+* break 	-> Stop the loop
+* continue 	-> Continue the loop
